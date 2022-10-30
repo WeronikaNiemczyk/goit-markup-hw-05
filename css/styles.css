@@ -35,11 +35,15 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--main-background-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button.port:focus {
   background-color: var(--main-link-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button {
   font-size: 16px;
@@ -72,35 +76,53 @@ ul {
   border-radius: 4px;
 }
 .link:hover {
-  color: var(--main-link-color);
+  color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .envelope {
   align-items: center;
   justify-items: center;
   margin-right: 10px;
+  fill: #757575;
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .smartphone {
   align-items: center;
   justify-items: center;
   margin-right: 10px;
+  fill: #757575;
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover .envelope,
 .link:focus .envelope {
-  stroke: var(--main-link-color);
+  fill: #2196f3;
 }
 .link:hover .smartphone,
 .link:focus .smartphone {
-  stroke: var(--main-link-color);
+  fill: #2196f3;
+  transition-duration: stroke 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:focus {
   color: var(--main-link-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.contact:hover {
   color: var(--main-link-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.contact:focus {
   color: var(--main-link-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .webstudio {
   font-size: 26px;
@@ -213,9 +235,13 @@ nav .link {
 }
 .link.nav.foot:hover {
   color: var(--main-link-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.nav.foot:focus {
   color: var(--main-link-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -274,6 +300,9 @@ nav .link {
 }
 .blue {
   color: var(--main-link-color);
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .figure-team {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -284,6 +313,9 @@ nav .link {
 .figure-proffesion {
   border: 1px solid #eeeeee;
   max-width: 370px;
+  transition: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .figure-proffesion:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -372,6 +404,11 @@ nav .link {
   gap: 10px;
   justify-content: space-between;
 }
+.social-media-icon {
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .social-media-icon:hover,
 .social-media-icon:focus .elipsa:hover {
@@ -387,12 +424,15 @@ nav .link {
   justify-content: center;
   background-color: var(--main-background-color);
   cursor: pointer;
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .elipsa:hover,
 .elipsa:focus {
-  background-color: var(--main-link-color);
+  background-color: #2196f3;
   --color4: var(--main-background-color);
-  fill: var(--color4);
+  fill: #fff;
 }
 
 .clients {
@@ -408,6 +448,10 @@ nav .link {
   padding-right: 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #afb1b8;
 }
 .clients-logo:hover,
 .clients-logo:focus {
@@ -455,4 +499,6 @@ nav .link {
 .footer-icons:hover,
 .footer-icons:focus {
   background-color: var(--main-link-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
