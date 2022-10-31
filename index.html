@@ -59,7 +59,9 @@
       <section class="banner">
         <div class="container">
           <h1 class="h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button mainbutton" type="button">Zamów usługę</button>
+          <button class="button mainbutton" type="button" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </section>
     </header>
@@ -379,5 +381,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          X
+          <!-- <svg class="close-modal" width="18px" height="18px">
+            <use href="./images/close-modal.svg"></use>
+          </svg> -->
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
