@@ -25,7 +25,7 @@
             >
             <nav class="navigation">
               <ul class="menu">
-                <li><a class="link" href="#">Agencja</a></li>
+                <li><a class="link agencja" href="./index.html">Agencja</a></li>
                 <li>
                   <a class="link" href="./portfolio.html">Portfolio</a>
                 </li>
@@ -381,7 +381,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" data-modal-close>X</button>
+        <button class="modal-btn" data-modal-close>
+          <svg class="close-btn" width="30" height="30">
+            <use href="./images/close-modal.svg#icon-close-modal"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

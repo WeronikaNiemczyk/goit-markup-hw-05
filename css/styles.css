@@ -101,6 +101,7 @@ ul {
 }
 .modal-btn {
   position: absolute;
+
   top: 8px;
   right: 8px;
   width: 30px;
@@ -110,7 +111,12 @@ ul {
   border-radius: 50%;
   cursor: pointer;
 }
-
+.close-btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
 .is-hidden {
   transform: translateY(100%);
   visibility: hidden;
@@ -606,7 +612,6 @@ nav .link {
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
   color: #ffffff;
-  border: 1px solid #000000;
   bottom: 0;
   font-weight: 700px;
   padding-top: 24px;
