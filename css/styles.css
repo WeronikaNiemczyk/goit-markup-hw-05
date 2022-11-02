@@ -112,10 +112,7 @@ ul {
   cursor: pointer;
 }
 .close-btn {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 6px;
-  padding-right: 6px;
+  width: 18px;
 }
 .is-hidden {
   transform: translateY(100%);
@@ -252,7 +249,6 @@ nav .link {
   color: var(--font-background-color);
 
   text-align: center;
-  padding-bottom: 30px;
 }
 .h4 {
   line-height: 1.17;
@@ -586,6 +582,8 @@ nav .link {
   background-color: var(--main-link-color);
   bottom: -32px;
   left: 0px;
+  border: 2px var(--main-link-color) solid;
+  border-radius: 2px;
 }
 .portfolio::after {
   content: "";
@@ -595,6 +593,8 @@ nav .link {
   background-color: var(--main-link-color);
   bottom: -32px;
   left: 0px;
+  border: 2px var(--main-link-color) solid;
+  border-radius: 2px;
 }
 .kontakt::after {
   content: "";
@@ -604,6 +604,8 @@ nav .link {
   background-color: var(--main-link-color);
   bottom: -32px;
   left: 0px;
+  border: 2px var(--main-link-color) solid;
+  border-radius: 2px;
 }
 .description-img-list > p {
   position: absolute;
