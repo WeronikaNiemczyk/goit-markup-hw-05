@@ -116,7 +116,7 @@ ul {
 }
 .is-hidden {
   transform: translateY(100%);
-  visibility: hidden;
+  visibility: visible;
   pointer-events: none;
 }
 .clients-logo:focus .button.port {
